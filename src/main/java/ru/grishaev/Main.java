@@ -36,12 +36,11 @@ public class Main {
         }
         private static void stackOverflow() {
             long maxLong = Long.MAX_VALUE;
-            long sum = maxLong + 1;
+            long sumLong = maxLong + 1;
             short a = Short.MAX_VALUE;
-            short b = Short.MAX_VALUE;
-            short sumShort = (short) (a + b);
+            short sumShort = (short) (a*2);
 
-            System.out.println("Переполнение long: " + sum);
+            System.out.println("Переполнение long: " + sumLong);
             System.out.println("Переполнение short: " + sumShort);
         }
         private static void combinationNumber() {
